@@ -1,0 +1,12 @@
+.container__menu-title > h1 {
+    margin: 0.5% 0;
+    font-size: 12rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container__menu-title > hr {
+    opacity: 0.1;
+    width: 80%;
+    margin-left: 10%;
+}
