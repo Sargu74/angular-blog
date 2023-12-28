@@ -1,0 +1,26 @@
+.articles {
+    display: flex;
+}
+
+.articles__main {
+    width: 50%;
+}
+
+.articles__others {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%
+}
+
+@media screen and (max-width: 481px) {
+    .articles {
+        flex-direction: column;
+    }    
+    .articles__main {
+        width: 100%;
+    }
+    .articles__others {
+        width: 100%;
+    }
+}
