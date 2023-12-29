@@ -5,7 +5,12 @@
         <app-big-card></app-big-card>
     </div>
     <div class="articles__others">
-        <app-small-card></app-small-card>
+        <app-small-card
+            *ngFor="let article of articles"
+            [pathImage]="article.pathImage"
+            [articleTitle]="article.articleTitle"
+            [articleDate]="article.articleDate"
+        ></app-small-card>
     </div>
 </div>
 
