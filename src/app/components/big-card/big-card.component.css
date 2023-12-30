@@ -38,6 +38,22 @@
     margin-bottom: 5%;
 }
 
+.container__textual-elements > a {
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 3px;
+    text-decoration: none;
+    width: 30%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container__textual-elements > a:hover {
+    color: #ffffff;
+    background-color: grey;
+}
+
 @media screen and (max-width: 481px) {
    .container__big-card > hr {
       display: inline;

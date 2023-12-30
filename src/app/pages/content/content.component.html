@@ -1,1 +1,14 @@
-<p>content works!</p>
+<app-menu-bar></app-menu-bar>
+<main>
+    <hr>
+    <h1>{{article.articleTitle.toUpperCase()}}</h1>
+    <hr>
+    <div class="container__action-button">
+        <a [routerLink]="['']"><i class="fa-solid fa-chevron-left"></i> Back to main</a>
+        <span>{{article.articleDate}}</span>
+    </div>
+    <div class="container__article-content">
+        <img align="left" [src]="article.pathImage">
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae placeat recusandae nihil quidem, repudiandae deleniti illo sapiente tenetur nemo laborum eum consequatur architecto, repellat fuga. Repellendus ad tempora exercitationem officia minus illum natus quos officiis expedita, corrupti magni dolore blanditiis sunt quaerat similique inventore explicabo quia iste quidem suscipit culpa!<br><br> Explicabo qui expedita eius blanditiis harum officia a at velit esse reprehenderit libero quaerat animi, eos, aut reiciendis laudantium eligendi! Quos eligendi minima libero numquam? Quae neque error provident aliquam quidem unde nesciunt sequi est rerum consequatur ad necessitatibus, adipisci quaerat impedit laborum dolores quibusdam aperiam nulla nam. Molestias optio eos, totam dicta incidunt dolorem ut quod. Quo, magni eos, consequuntur dolore facere architecto sit ducimus aperiam voluptate assumenda quidem repudiandae soluta omnis, repellendus ratione velit rerum totam quia.<br><br> Vero, possimus. Ullam enim ipsam quasi praesentium dolores suscipit ad debitis commodi, molestiae repellat autem possimus recusandae? Id distinctio itaque nostrum repellendus. Optio sint sapiente quia doloribus ab recusandae nobis explicabo, ea corrupti voluptates quis iure eum sit porro quasi voluptatibus a et voluptatem dolor ut dolorem illo? Laudantium sint consequuntur provident reiciendis. Non magni molestias sed neque a accusamus consequatur. Commodi ipsum quaerat recusandae error molestiae eius, repellendus nobis assumenda!</span>
+    </div>
+</main>
