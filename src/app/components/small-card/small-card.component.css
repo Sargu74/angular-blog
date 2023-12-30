@@ -1,5 +1,5 @@
 .container__small-card {
-    max-width: 90%;
+    width: 90%;
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -42,13 +42,32 @@
 }
 
 .small-card-texts > h3 {
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 400;
+}
+
+.small-card-texts > a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 3px 6px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.small-card-texts > a:hover {
+    color: #ffffff;
+    background-color: grey;
 }
 
 @media screen and (max-width: 481px) {
     .container__small-card {
         flex-direction: row-reverse;
+    }
+
+    .container__small-card > hr {
+        width: 80%;
     }
 
 }

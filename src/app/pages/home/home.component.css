@@ -4,6 +4,7 @@
 
 .articles__main {
     width: 50%;
+    margin-left: 5%;
 }
 
 .articles__others {
@@ -20,6 +21,7 @@
     }    
     .articles__main {
         width: 100%;
+        margin-left: 0;
     }
     .articles__others {
         width: 100%;
