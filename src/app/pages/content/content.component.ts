@@ -15,11 +15,7 @@ export class ContentComponent {
 
   constructor(
     private route: ActivatedRoute
-  ) {}
-
-  @Input() title: string = ''
-  @Input() text: string = ''
-  @Input() imagePath: string = ''
+  ) { }
 
   routeId: string | null = "0"
   article: articleType = {
@@ -34,7 +30,7 @@ export class ContentComponent {
     this.route.paramMap.subscribe(
       value => {
         this.routeId = value.get('id')
-        this.article = Articles[this.article.id]
+        this.article = Articles[Number(this.routeId)]
       }
     )
   }
